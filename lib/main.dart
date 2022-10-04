@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('Ordenação de Números'),
+        title: 'Programa Ordenação de Números',
       ),
       body: new Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -153,6 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
     pN = int.parse(pNumero.text);
     sN = int.parse(pNumero.text);
     tN = int.parse(pNumero.text);
+    pNum.text= "digite a segunda"
     setState(() {
       if ((pN > sN) && (pN > tN)) {
         if (sN > tN) {
@@ -177,6 +178,7 @@ class _MyHomePageState extends State<MyHomePage> {
         } else {
           ordenacao =
               pN.toString() + ", " + sN.toString() + ", " + tN.toString();
+          
         }
       }
     });
